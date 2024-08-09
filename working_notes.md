@@ -8,10 +8,10 @@ It is a crucial technique for several reasons, especially in the context of Deep
 'float-32' is the most commonly used precision. However, converting the weights of a model from 'float-32' to 'int-8' reduces the model's size by a factor of four. This makes the model suitable to run on devices with limited memory and storage capacity and at the same time results in reduced cost associated with transmission and storage space.  
 
 **Faster inference:**  
-Mathematical operations with lower precision are generally faster than those with higher precision. With less bandwidth requirement the transmission of time between memory and processor is further reduced. Moreover, certain AI accelerators are optimized for low-precision operations.
+Mathematical operations with lower precision are generally faster than those with higher precision. Moreover, with less bandwidth requirement the transmission time between memory and processor is further reduced. Certain AI accelerators are also optimized for low-precision operations.
 
 **Maintaining Accuracy levels:**  
-Although there is a trade-off between model accuracy with quantization, however, certain methods like Quantization Aware Training result in minimal accuracy loss making quantized models a viable option where accuracy and speed are both critical.
+Although there is a trade-off between model accuracy and quantization, however, certain methods like Quantization Aware Training result in minimal accuracy loss making quantized models a viable option where accuracy and speed are both critical.
 
 Quantization results in reducing the precision of both weights and activations (output from the activation layer that receives a weighted sum of inputs). There are four different techniques:  
 1. Post Training Quantization  
@@ -22,3 +22,6 @@ Quantization results in reducing the precision of both weights and activations (
    The model is trained with full precision but during inference time the quantization parameters are computed dynamically to convert weights and activations to a lower precision format.
 7. Static Quantization
   With a careful calibration of a representative dataset, the quantization parameters are computed beforehand to reduce the precision of weights and activations.
+
+
+More on quantization on [HuggingFace](https://huggingface.co/docs/optimum/en/concept_guides/quantization#quantization)
