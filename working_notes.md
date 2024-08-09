@@ -36,6 +36,6 @@ On the other hand, tf-idf finds a set of frequent words for each document and th
 
 BM25 has been proven more superior to tf-idf in document search and ranking.  
 
-More on BM25 on [Elastic[(https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables)
+More on BM25 on [Elastic](https://www.elastic.co/blog/practical-bm25-part-2-the-bm25-algorithm-and-its-variables)
 
 
