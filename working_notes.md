@@ -25,3 +25,17 @@ Quantization results in reducing the precision of both weights and activations (
 
 
 More on quantization on [HuggingFace](https://huggingface.co/docs/optimum/en/concept_guides/quantization#quantization)
+
+
+## BM25
+Best Matching 25 (BM25) is one of the bag-of-words models to measure the rank of documents in search results for a given query. It is a modified version of tf-idf taking frequency threshold and document length into account.  
+
+BM25 considers word frequency in a document to understand its frequency but at the same time, it dilutes its importance if the word is frequent across all the documents. Moreover, a long document with fewer repetitions of certain words results in lower importance for the word. BM25 considers all these three factors to generate a score that is ultimately used for ranking documents.  
+
+On the other hand, tf-idf finds a set of frequent words for each document and their occurrence across the other documents. The frequent words are futher analyzed to find corresponding documents are relevant ones for document search.  
+
+BM25 has been proven more superior to tf-idf in document search and ranking.  
+
+
+
+
